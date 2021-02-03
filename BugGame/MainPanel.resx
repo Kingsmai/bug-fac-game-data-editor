@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TextBoxGameConsole.Text" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tellus dolor, lobortis non pretium eget, tincidunt et turpis. Fusce ac ex lobortis, porttitor diam eget, commodo mauris. Suspendisse eu faucibus lacus. Vivamus odio eros, auctor eget mi nec, facilisis porta urna. Maecenas faucibus mattis eros. Curabitur gravida luctus magna ut sagittis. Maecenas dignissim, sapien eu ullamcorper commodo, erat eros elementum ipsum, in suscipit lectus mi id sapien. Aenean ligula ex, cursus vitae est sed, consectetur fermentum leo. Ut turpis nunc, vestibulum vitae arcu hendrerit, fringilla egestas quam. Etiam suscipit lobortis ipsum feugiat rhoncus. Curabitur tristique auctor sem consectetur venenatis. Donec vehicula tempor magna nec molestie.
+
+Cras quis ultricies risus. Praesent enim odio, sollicitudin sed laoreet quis, cursus ac est. Aliquam aliquet ante velit, id bibendum dui viverra sed. In viverra justo non tellus lacinia, ut posuere justo efficitur. Vivamus volutpat neque sodales elit vulputate aliquam rutrum eget neque. Maecenas tristique nibh at mi varius, sit amet tempor massa condimentum. Suspendisse odio lorem, iaculis nec consequat at, malesuada at nulla. Donec sollicitudin ex libero, placerat vestibulum mauris efficitur non. Vestibulum sollicitudin tellus erat, eu consectetur odio facilisis vel. Donec finibus maximus sapien, ac aliquam enim vehicula eget. Sed lorem lorem, convallis eu felis et, commodo sagittis lacus. Nam at diam dictum, consectetur justo sed, maximus quam. Duis eu lacus eu dolor vulputate accumsan. Fusce tristique commodo nisl vel aliquet.
+
+Suspendisse neque nisi, consectetur in ipsum et, tempor elementum lacus. Aliquam erat volutpat. Fusce gravida eros a lacus ullamcorper, nec cursus orci tempor. Quisque rutrum sagittis convallis. Etiam velit quam, vestibulum vel euismod et, auctor et lectus. Sed tristique tempor dolor a pretium. Donec nunc mi, fringilla at tellus ac, finibus pellentesque tortor. Nullam neque libero, vulputate rutrum maximus at, volutpat et purus. Suspendisse in nunc non magna pharetra consectetur in eu purus. Aenean dictum hendrerit dolor, eget rutrum tellus eleifend ut. In luctus nisi et tortor tempor, eget rutrum lectus scelerisque. Aliquam sollicitudin consectetur massa, ut cursus mauris tempor eget. Suspendisse dignissim lacinia risus, nec rutrum eros efficitur id.
+
+Integer viverra sagittis felis, non molestie ipsum maximus et. Nulla rutrum dolor sed nisl convallis, non feugiat augue consequat. Proin iaculis tellus lectus, at venenatis lacus elementum ac. Quisque id ipsum volutpat, congue arcu eu, pretium urna. In at aliquam orci. Fusce tincidunt est vel feugiat blandit. Ut orci ex, tincidunt ac velit sed, malesuada interdum mi. Ut in sapien et sapien pulvinar luctus. Donec id mollis nulla. Etiam lectus dolor, finibus sit amet elementum vitae, imperdiet sit amet nisl.
+
+Nulla facilisi. Maecenas convallis dolor id velit gravida ornare. Nulla lacinia justo non porttitor ullamcorper. Integer molestie suscipit odio vitae molestie. Suspendisse potenti. Nam at laoreet ipsum. Vivamus non augue id tellus pretium pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus ligula, sollicitudin nec felis vel, maximus mattis nisl.</value>
+  </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>132, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>69</value>
+  </metadata>
+</root>
