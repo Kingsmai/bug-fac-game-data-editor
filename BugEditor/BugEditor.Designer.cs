@@ -56,6 +56,7 @@ namespace BugEditor
 			this.tpEnemies = new System.Windows.Forms.TabPage();
 			this.tpTroops = new System.Windows.Forms.TabPage();
 			this.tpStates = new System.Windows.Forms.TabPage();
+			this.tabSystem = new System.Windows.Forms.TabPage();
 			this.tabDevBlog = new System.Windows.Forms.TabPage();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.btnChangeSize = new System.Windows.Forms.Button();
@@ -64,7 +65,6 @@ namespace BugEditor
 			this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
 			this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-			this.tabSystem = new System.Windows.Forms.TabPage();
 			((System.ComponentModel.ISupportInitialize)(this.DataList)).BeginInit();
 			this.tabPanel.SuspendLayout();
 			this.tpActors.SuspendLayout();
@@ -360,6 +360,16 @@ namespace BugEditor
 			this.tpStates.Text = "状态";
 			this.tpStates.UseVisualStyleBackColor = true;
 			// 
+			// tabSystem
+			// 
+			this.tabSystem.Location = new System.Drawing.Point(4, 22);
+			this.tabSystem.Name = "tabSystem";
+			this.tabSystem.Padding = new System.Windows.Forms.Padding(3);
+			this.tabSystem.Size = new System.Drawing.Size(652, 533);
+			this.tabSystem.TabIndex = 10;
+			this.tabSystem.Text = "系统设置";
+			this.tabSystem.UseVisualStyleBackColor = true;
+			// 
 			// tabDevBlog
 			// 
 			this.tabDevBlog.Location = new System.Drawing.Point(4, 22);
@@ -379,7 +389,7 @@ namespace BugEditor
 			this.groupBox2.Size = new System.Drawing.Size(195, 555);
 			this.groupBox2.TabIndex = 9;
 			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "开发者专用控制台";
+			this.groupBox2.Text = "控制台";
 			// 
 			// btnChangeSize
 			// 
@@ -429,16 +439,6 @@ namespace BugEditor
 			this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
 			this.toolStripStatusLabel1.Size = new System.Drawing.Size(124, 17);
 			this.toolStripStatusLabel1.Text = "Bug Editor by Xiaomai";
-			// 
-			// tabSystem
-			// 
-			this.tabSystem.Location = new System.Drawing.Point(4, 22);
-			this.tabSystem.Name = "tabSystem";
-			this.tabSystem.Padding = new System.Windows.Forms.Padding(3);
-			this.tabSystem.Size = new System.Drawing.Size(652, 533);
-			this.tabSystem.TabIndex = 10;
-			this.tabSystem.Text = "系统设置";
-			this.tabSystem.UseVisualStyleBackColor = true;
 			// 
 			// BugEditor
 			// 

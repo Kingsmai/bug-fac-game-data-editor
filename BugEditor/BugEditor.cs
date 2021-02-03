@@ -26,13 +26,7 @@ namespace BugEditor
 		public BugEditor()
 		{
 			InitializeComponent();
-
-			DataList.SelectionChanged += ReadRowData; // 监听事件
-
-			tbActorName.Leave += UpdateRowData;
-			tbActorNickname.Leave += UpdateRowData;
-			tbActorProfile.Leave += UpdateRowData;
-			btnTest.Click += Editor.Test;
+			SetEventHandlers();
 
 			Editor.LoadData();
 			if (Editor.Actors.Count > 0)
@@ -53,6 +47,18 @@ namespace BugEditor
 			}
 		}
 
+		/// <summary>
+		/// 设置监听事件
+		/// </summary>
+		private void SetEventHandlers()
+		{
+			DataList.SelectionChanged += ReadRowData;
+			tbActorName.Leave += UpdateRowData;
+			tbActorNickname.Leave += UpdateRowData;
+			tbActorProfile.Leave += UpdateRowData;
+			btnTest.Click += Editor.Test;
+		}
+
 		// 点击列表之后，在对应信息框中显示数据
 		private void ReadRowData(object sender, EventArgs e)
 		{
@@ -65,16 +71,14 @@ namespace BugEditor
 
 		private void UpdateRowData(object sender, EventArgs e)
 		{
-			DataList.SelectedRows[0].Cells["ItemName"].Value = tbActorName.Text;
 			// 更新数据
 			Editor.Actors[CurrentSelectedIndex].Name = tbActorName.Text;
 			Editor.Actors[CurrentSelectedIndex].Nickname = tbActorNickname.Text;
 			Editor.Actors[CurrentSelectedIndex].Profile = tbActorProfile.Text;
-		}
 
-		/// <summary>
-		/// 读取数据，并将数据挂在DataGrid上
-		/// </summary>
+			// 更新侧边栏文本内容
+			DataList.SelectedRows[0].Cells["ItemName"].Value = tbActorName.Text;
+		}
 
 		protected override void OnFormClosing(FormClosingEventArgs e)
 		{
