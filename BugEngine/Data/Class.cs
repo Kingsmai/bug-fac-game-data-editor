@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace BugEngine.Data
 {
-	public class Class
+	public class Class : Data
 	{
+		public Class() : base(0, "") { }
 	}
 }

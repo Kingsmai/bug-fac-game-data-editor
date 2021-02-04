@@ -17,14 +17,14 @@ namespace BugEngine.Editor
 	{
 		#region 所有游戏物品List
 		public static List<Actor> Actors = new List<Actor>();
-		private static List<Class> Classes = new List<Class>();
-		private static List<Skill> Skills = new List<Skill>();
-		private static List<Item> Items = new List<Item>();
-		private static List<Weapon> Weapons = new List<Weapon>();
-		private static List<Armor> Armors = new List<Armor>();
-		private static List<Enemy> Enemies = new List<Enemy>();
-		private static List<Troop> Troops = new List<Troop>();
-		private static List<State> States = new List<State>();
+		public static List<Class> Classes = new List<Class>();
+		public static List<Skill> Skills = new List<Skill>();
+		public static List<Item> Items = new List<Item>();
+		public static List<Weapon> Weapons = new List<Weapon>();
+		public static List<Armor> Armors = new List<Armor>();
+		public static List<Enemy> Enemies = new List<Enemy>();
+		public static List<Troop> Troops = new List<Troop>();
+		public static List<State> States = new List<State>();
 		#endregion
 
 		#region 变量值
@@ -70,13 +70,20 @@ namespace BugEngine.Editor
 			}
 		}
 
+		/// <summary>
+		/// 读取XML文件
+		/// </summary>
+		/// <typeparam name="T"></typeparam>
+		/// <param name="path"></param>
+		/// <param name="type"></param>
+		/// <returns></returns>
 		private static List<T> ReadXml<T>(string path, Type type)
 		{
+			List<T> list = new List<T>();
 			// 如果找不到路径，则创建目录
 			if (!Directory.Exists(DataPath))
 			{
 				Directory.CreateDirectory(DataPath);
-				return new List<T>();
 			}
 			if (File.Exists(path))
 			{
@@ -84,21 +91,23 @@ namespace BugEngine.Editor
 				XmlSerializer serializer = new XmlSerializer(type);
 				using (FileStream stream = new FileStream(path, FileMode.Open))
 				{
-					return serializer.Deserialize(stream) as List<T>;
+					list = serializer.Deserialize(stream) as List<T>;
 				}
 			}
-			return new List<T>();
+			return list;
 		}
 
 		public static void SaveData()
 		{
 			// 保存所有数据
 			ExportXml(ActorsPath, typeof(List<Actor>), Actors);
+			ExportXml(ClassesPath, typeof(List<Class>), Classes);
 		}
 
 		public static void LoadData()
 		{
 			Actors = ReadXml<Actor>(ActorsPath, typeof(List<Actor>));
+			Classes = ReadXml<Class>(ClassesPath, typeof(List<Class>));
 		}
 
 		/// <summary>
